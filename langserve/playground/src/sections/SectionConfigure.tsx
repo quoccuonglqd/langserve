@@ -31,19 +31,6 @@ export function SectionConfigure(props: {
             }
           }}
         />
-
-        {!!props.value.errors?.length && props.value.data && (
-          <div className="bg-background rounded-xl">
-            <div className="bg-red-500/10 text-red-700 dark:text-red-300 rounded-xl p-3">
-              <strong className="font-bold">Validation Errors</strong>
-              <ul className="list-disc pl-5">
-                {props.value.errors?.map((e, i) => (
-                  <li key={i}>{e.message}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        )}
       </div>
     </div>
   );

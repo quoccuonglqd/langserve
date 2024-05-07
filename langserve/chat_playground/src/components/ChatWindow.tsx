@@ -8,7 +8,6 @@ import {
   type ChatMessageType,
   type ChatMessageBody,
 } from "./ChatMessage";
-import { ShareDialog } from "./ShareDialog";
 import { useStreamCallback } from "../useStreamCallback";
 
 import ArrowUp from "../assets/ArrowUp.svg?react";
@@ -125,14 +124,14 @@ export function ChatWindow(props: {
           <span className="ml-1">Playground</span>
         </div>
         <div className="flex items-center space-x-4">
-          <ShareDialog config={{}}>
+          {/* <ShareDialog config={{}}>
             <button
               type="button"
               className="px-3 py-1 border rounded-full px-8 py-2 share-button"
             >
               <span>Share</span>
             </button>
-          </ShareDialog>
+          </ShareDialog> */}
         </div>
       </nav>
       <div className="flex-grow flex flex-col items-center justify-center mt-8">
